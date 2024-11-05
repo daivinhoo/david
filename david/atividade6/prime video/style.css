@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'amazon ember bold';
+    font-size: 1em;
+}
+
+html {
+    font-size: 62.5%;   
+}
+
+nav>div>a {
+    font-family: amazon, fantasy, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #00050d;
+    padding-left: 7rem;
+    gap: 6rem;
+    font-weight: 700;
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #00050d;
+    gap: 5rem;
+    font-weight: 700;
+
+}
+
+header {
+    width: 100%;
+    font-size: 1.5rem;
+    letter-spacing: 0.10rem;
+
+}
+
+header img {
+    height: 1.8rem;
+    margin: 2.5rem 0;
+}
+
+nav {
+    display: flex;
+    margin-top: .5rem;
+    gap: 3rem;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: 100;
+}
+
+
+
+.Assinantes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.Assinantes>svg {
+    fill: white;
+    width: 2rem;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding-left: 45rem;
+    color: white;
+}
+
+.pesquisa>svg {
+    fill: white;
+    width: 5rem;
+}
+
+/* =========banner=========== */
+
+.banner {
+    position: relative;
+    text-align: left;
+    color: white;
+    background-image: url(../banner1.jpg);
+}
+
+.banner img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    padding: 381px 360px 380px 0px;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    max-width: 1100px;
+    
+    background-image: linear-gradient(to right, black 55%, transparent 80%);
+}
+
+.banner-text h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.banner-text p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.banner-text button {
+    background-color: #00a8e1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.banner-text .note {
+    font-size: 0.8em;
+    color: lightgray;
+}
+
+/* ---------channels============= */
+#channels{
+    display: flex;
+    padding: 10px 0px;
+}
+
+#channels article {
+    max-width: 50%;
+}
+.Channels_texto {
+    padding: 35px;
+}
+
+.channels_texto h2 {
+    font-family: 'amazon ember light';
+    margin-bottom: 20px;
+}
+
+h2{ font-size: 40px;
+    font-weight: 500; }
+
+    p{     display: flex;
+        height: 7px;
+        margin-block-start: 10px;
+        
+    }
+.channels p {
+    font-family: 'amazon ember light';
+    font-size: 15px;
+}
+
+.channel-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+
+  
+}
+
+    #channels img{ 
+        max-width: 234px;
+        height: 200px;
+        transition: .15s;
+   
+    }
+
+    img{     overflow-clip-margin: content-box;
+        overflow: clip;}
+
+  /* =--------banner2-------- */
+        
+.store {
+    height: 40em;
+    background-image: url(../img/banner2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+}
+
+.store articles{ }
+
+.store h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.store button {
+    background-color: #00a8e1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.features div {
+    text-align: center;
+    max-width: 200px;
+}
+
+.features img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}

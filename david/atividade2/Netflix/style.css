@@ -1,0 +1,41 @@
+ 
+        
+        body {
+            background-color: #141414;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #e50914;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 20px 0 10px;
+            color: #ffffff;
+        }
+
+        table {
+            width: 80%;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            font-size: 1em;
+        }
+
+        th {
+            background-color: #e50914;
+            color: #ffffff;
+        }
+
+       
