@@ -1,0 +1,62 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+
+@font-face {
+    font-family: "capture it";
+    src: url(./capture_it/Capture\ it.ttf);
+}
+
+
+h1{
+    font-family: "capture it";
+    text-align: center;
+
+}
+
+h2 {   
+      font-family: monospace;
+      color: rgba(58, 158, 158, 0.534);
+      text-align: center; 
+}
+
+p { 
+      font-family: sans-serif;
+      text-align: justify;
+      line-height: 30px;
+      letter-spacing: 5px;
+      /* letter-spacing: 10px
+         word-spacing: 20px    */
+         text-indent: 70px;
+}
+
+h3 {
+    font-family: cursive;
+    text-transform: capitalize;
+    
+}
+h4 { 
+    font-family: fantasy;
+    text-shadow: 5px 3px  rgb(56, 202, 228);
+    font-size: 36px;
+    color: rgb(56, 56, 224);
+
+}
+
+a {
+    text-decoration-line: underline ;
+    text-decoration-style: wavy ;
+    color: rgb(252, 88, 116);
+    font-size: 40px;
+    
+
+}
+
+body{ background-color: rgba(0, 0, 0, 0.952);
+    background-image: url(https://f.i.uol.com.br/fotografia/2018/07/01/15304782085b393e802f653_1530478208_3x2_md.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom; 
+    background-size: cover;
+    background-blend-mode:  ;
+ }

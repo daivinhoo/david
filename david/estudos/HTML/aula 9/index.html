@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="tyle.css">
+</head>
+
+<body>
+    <h1>Formulario</h1>
+
+    <form>
+        <fieldset>
+            <legend>dados pessoais
+            </legend>
+            <label for="Nome">Nome:</label>
+            <input type="text" id="Nome" placeholder="nome completo" maxlength="7" required autocomplete="nama" name="nome">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="exemplo@exemplo.com" autocomplete="email">
+            <br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" placeholder="........">
+
+            <label for="repita-senha">Repita a Senha:</label>
+            <input type="password" id="repita-senha" placeholder="........">
+            <br><br>
+
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" id="nascimento">
+
+            <label for="filhos">Quantidade de filhos</label>
+            <input type="number" id="filhos" min="0" max="20">
+            <br><br>
+
+            <label for="foto">foto de perfil</label>
+            <input type="file" accept=".png, .jpg" id="foto">
+            <label for="cor">cor favorita:</label>
+            <input type="color" id="cor" value="#696969">
+            <br><br>
+            <label for="objetivo">Objetivo:</label>
+            <textarea id="objetivo" cols="30" rows="10" maxlength="60" spellcheck="true"></textarea>
+            <br><br>
+            <input type="range">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <label for="logradouro">Lougradouro:</label>
+            <select id="Lougradouro">
+
+                <option value="" selected>Slecione uma opção</option>
+
+                <option value="Bairro">Bairro</option>
+
+                <option value="Quadra">Quadra</option>
+
+                <option value="Sitio">Sitio</option>
+
+
+            </select>
+
+            <input type="checkbox" value="">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Experiencias</legend>
+
+            <label for="gogoboy">
+
+                <input type="checkbox" value="Go Go Boy" id="gogoboy">Go Go Boy</label>
+
+
+            <label for="Garoto do programa">
+
+                <input type="checkbox" value="Garoto do programa" id="Garoto do programa">Garoto do programa</label>
+
+            <label for="Motoboy">
+
+                <input type="checkbox" value="Motoboy" id="Motoboy">Motoboy</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Termos</legend>
+            <label for=""><input type="checkbox" id="termos">Você aceita os termos e condições do site?</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Estado Civil</legend>
+
+            <label for="estado">
+                <input type="radio" value="solteiro" name="estado1" id="estado1">Solteiro
+            </label>
+
+            <label for="estado2">
+                <input type="radio" value="Casado" name="estado2" id="estado2">Casado
+            </label>
+
+            <label for="estado3">
+                <input type="radio" value="Viuvo" name="estado3" id="estado3">Viuvo
+            </label>
+        </fieldset>
+
+
+
+
+
+
+        <br><br> <br><br>
+        <button>Enviar
+
+        </button>
+    </form>
+</body>
+
+</html>

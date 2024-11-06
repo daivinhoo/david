@@ -1,13 +1,28 @@
+@font-face {
+    font-family: amazonLigth;
+    src: url(../img\AmazonEmber_Lt.woff);
+    
+}
+
+@font-face {
+    font-family: amazonRigth;
+    src: url(../img/AmazonEmber_Rg.woff); }
+    
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'amazon ember bold';
-    font-size: 1em;
+    font-family: "amazonLigth", fan
+    
 }
 
 html {
-    font-size: 62.5%;   
+    font-size: 62.5%;
+}
+
+body{
+    list-style: none;
 }
 
 nav>div>a {
@@ -18,93 +33,82 @@ nav>div>a {
 
 }
 
-body {
+.header{
     display: flex;
-    width: 100vw;
-    flex-direction: column;
-
-}
-
-.inicio {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    background-color: #00050d;
-    padding-left: 7rem;
-    gap: 6rem;
-    font-weight: 700;
-
-}
-
-.title {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    background-color: #00050d;
-    gap: 5rem;
-    font-weight: 700;
-
-}
-
-header {
+    height: 5.6rem;
     width: 100%;
-    font-size: 1.5rem;
-    letter-spacing: 0.10rem;
-
-}
-
-header img {
-    height: 1.8rem;
-    margin: 2.5rem 0;
-}
-
-nav {
-    display: flex;
-    margin-top: .5rem;
-    gap: 3rem;
-}
-
-.barra {
-    display: flex;
-    align-items: center;
-    font-size: 1.9rem;
-    font-weight: 100;
-}
-
-
-
-.Assinantes {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    background-color: #00050d;
     color: white;
+    display: flex;
+    justify-content: center ; 
+    font-size: 1.6rem;
 }
+
+.header nav{
+    display: flex   ;
+    align-items:center;
+    min-width: 60%;
+    justify-content: center;
+
+}
+
+.header .logo-seta, a:hover{
+    cursor: pointer;
+}
+
+.logo-seta{
+    display: flex;
+    margin: 0rem 1.5rem;
+    padding-right: 0.2rem;
+}
+
+.logo-seta svg{
+    transition: .5s;
+}
+
+.logo-seta svg:hover{
+    transform: rotate(180deg)
+
+    
+}
+
+.logo-seta a{
+    padding-right: 0rem;
+}
+
+
+.header a{
+    text-decoration: none;
+    color: #a9aaaa;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 1rem;
+    font-family: sans-serif;
+    justify-self: center;
+    align-items:center
+}
+
+.header img{
+    width: 12.8rem;
+    height: 2.4rem;
 
 
 .material-symbols-outlined {
     font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-}
+    'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+    }
 
-.Assinantes>svg {
-    fill: white;
-    width: 2rem;
-}
 
-.pesquisa {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    padding-left: 45rem;
-    color: white;
-}
 
-.pesquisa>svg {
-    fill: white;
-    width: 5rem;
+
+
+}
+.header a img{
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 /* =========banner=========== */
@@ -128,7 +132,7 @@ nav {
     top: 0%;
     left: 5%;
     max-width: 1100px;
-    
+
     background-image: linear-gradient(to right, black 55%, transparent 80%);
 }
 
@@ -158,7 +162,7 @@ nav {
 }
 
 /* ---------channels============= */
-#channels{
+#channels {
     display: flex;
     padding: 10px 0px;
 }
@@ -166,6 +170,7 @@ nav {
 #channels article {
     max-width: 50%;
 }
+
 .Channels_texto {
     padding: 35px;
 }
@@ -175,14 +180,18 @@ nav {
     margin-bottom: 20px;
 }
 
-h2{ font-size: 40px;
-    font-weight: 500; }
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
 
-    p{     display: flex;
-        height: 7px;
-        margin-block-start: 10px;
-        
-    }
+p {
+    display: flex;
+    height: 7px;
+    margin-block-start: 10px;
+
+}
+
 .channels p {
     font-family: 'amazon ember light';
     font-size: 15px;
@@ -193,58 +202,130 @@ h2{ font-size: 40px;
     flex-wrap: wrap;
     gap: 80px;
 
-  
+
 }
 
-    #channels img{ 
-        max-width: 234px;
-        height: 200px;
-        transition: .15s;
-   
-    }
+#channels img {
+    max-width: 234px;
+    height: 200px;
+    transition: .15s;
 
-    img{     overflow-clip-margin: content-box;
-        overflow: clip;}
+}
 
-  /* =--------banner2-------- */
-        
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/* =--------banner2-------- */
+
 .store {
-    height: 40em;
-    background-image: url(../img/banner2.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: end;
+    position: relative;
+    text-align: right;
+    color: white;
+    background-image: url(../banner1.jpg);
 }
 
-.store articles{ }
+.store img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
 
-.store h2 {
-    font-size: 1.5em;
+.banner2_texto {
+    padding: 404px 391px 380px 200px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    max-width: 1100px;
+    background-image: linear-gradient(to left, black 81%, transparent 97%);
+}
+
+.banner2_texto h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.banner2_texto p {
+    font-size: 1em;
     margin-bottom: 10px;
 }
 
-.store button {
+.banner2_texto button {
     background-color: #00a8e1;
     color: white;
     padding: 10px 20px;
     border: none;
+    margin: 5px 0;
     cursor: pointer;
 }
 
+
+
+/* -----------seção-de-recursos-------- */
+
+
+
 .features {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    background-color: #f0f0f0;
+    gap: 20px;
+    padding: 60px 5% 50px 5%;
+
 }
 
 .features div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 340px;
     text-align: center;
-    max-width: 200px;
+
+
 }
 
-.features img {
-    width: 50px;
-    height: auto;
-    margin-bottom: 10px;
+.features img {}
+
+h3 {
+    font-family: 'amazon ember light';
+    font-size: 25px;
+    font-weight: 500;
 }
+
+.features p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ------------roda----pe------- */
+
+#roda-pe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #222222;
+    align-items: center;
+    color: #a9aaaa;
+    gap: 8px;
+    height: 156px;
+    width: 100%;
+}
+
+
+.texto-roda-pe a{color: #0f79af;
+    font-size: 16px;
+    font-family: 'amazon ember light';
+    
+    
+    
+}
+
+.texto-roda-pe{ 
+    display: flex;
+    gap: 10px;
+    list-style: none;}
+
+    .textp-roda-pe p { font-size: 16px;}
